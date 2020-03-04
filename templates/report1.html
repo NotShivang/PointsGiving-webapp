@@ -1,0 +1,44 @@
+<html>
+<head> 
+    <body>
+		<h3>Report 1: Aggregate Usage Of Points On A Monthly Basis</h3>
+    <br>
+	<button align = "right" onclick="window.location.href='/adminhome'">Back</button>
+    <table border="1" cellpadding="5" cellspacing="5">
+	<tr>
+	<th> Total Points Sent </th>
+	<th> Total Points Received </th>
+	<th> Total Points Redeemed </th>
+	<th> Month </th>
+	</tr>
+    {% for row in data1 %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+    <br><br><br>
+	
+	<h3>Report 1: Aggregate Usage Of Points On A Monthly Basis broken down by User</h3>
+    <br>
+    <table border="1" cellpadding="5" cellspacing="5">
+	<tr>
+	<th> UserID </th>
+	<th> Points Sent </th>
+	<th> Points Received </th>
+	<th> Points Redeemed </th>
+	<th> Month </th>
+	</tr>
+    {% for row in data %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+    <br><br><br>
+    </body>
+</html>

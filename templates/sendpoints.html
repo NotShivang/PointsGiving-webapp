@@ -1,0 +1,21 @@
+<head></head>
+<body>
+	<h1>Send Points Page </h1>
+	<h3> You can send {{balance}} points</h3>
+	<form action="" method="post">
+
+    		Which employee do you want to send points to?
+    		<br> 
+		<select name="receiverid" id = "receiverid">
+       {% for x in recs %}
+       <option value = '{{x}}'>{{x}}</option>
+       {% endfor %}
+     </select> <br><br>
+
+    		Number of points to send: <input type="text" name="pointstosend"><br>
+			Message: <input type="text" name="mess"><br>
+    		<br><br>
+    		<input type="submit">
+  		</form>
+		<button align = "right" onclick="window.location.href='/userhome'">Back</button>
+</body>

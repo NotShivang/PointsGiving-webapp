@@ -1,0 +1,28 @@
+<html>
+<head> <h1 align="left"> Welcome {{uname}} </h1> <head>
+	<body>
+		<h2> This is month {{tpid}}:{{d}} </h2> <br>
+		<h2> You have {{pr}} points</h2>
+		<button align = "right" onclick="window.location.href='/sendpoints'">Send Points</button>
+		<button align = "right" onclick="window.location.href='/redeempoints'">Redeem Points</button>
+		<button align = "right" onclick="window.location.href='/Login'">Logout</button>
+		
+		 <br><br>
+    <table border="1" cellpadding="5" cellspacing="5">
+	<tr>
+	<th> SenderID </th>
+	<th> ReceiverID </th>
+	<th> Points Sent </th>
+	<th> Message </th>
+	<th> Month </th>
+	</tr>
+    {% for row in data %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head> 
+    <body> 
+	<button align = "right" onclick="window.location.href='/Login'">Login</button>
+    <br><br>
+    <table border="1" cellpadding="5" cellspacing="5">
+	<tr>
+	<th> UserID </th>
+	<th> User Name </th>
+	<th> Role </th>
+	</tr>
+    {% for row in data %}
+        <tr>
+        {% for d in row %}
+            <td>{{ d }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+    <br><br><br>
+    </body>
+</html>

@@ -21,6 +21,4 @@ o	One that shows All Redemptions, By Month By User, For The Previous Two Months
 •	Include a button for the Admin to force a month end (which will reset all points to give out)
 •	Each user should be able to see a complete history of both points received and points given
 •	Users cannot re-gift points they receive.  There are separate balances for points to give and points received.
-Other Notes:
-•	It is HIGHLY suggested that you store your DDL and DML in some form of source control
-•	Requirements are subject to change/clarification as the project progresses. The Piazza discussion board will be the official medium for communication about requirements.  No requirements change/clarification is official unless it has been posted on Piazza and tagged with the “project_requirements” label.
+
